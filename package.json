@@ -1,0 +1,33 @@
+{
+  "name": "cyclone",
+  "version": "1.0.0",
+  "description": "Faithful vgpu WebGPU port of XorDev’s Cyclone [369]",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "check": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hassabis/cyclone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "SEE LICENSE IN THIRD_PARTY.md",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Hassabis/cyclone/issues"
+  },
+  "homepage": "https://github.com/Hassabis/cyclone#readme",
+  "dependencies": {
+    "vgpu": "0.4.1"
+  },
+  "devDependencies": {
+    "@vgpu/wgsl": "0.4.1",
+    "@webgpu/types": "0.1.72",
+    "typescript": "7.0.2",
+    "vite": "8.3.0"
+  },
+  "private": true
+}

@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Cyclone — GLSL / WGSL verification</title></head>
+<body style="background:#100b18;color:#e6d5f4;font:14px/1.6 monospace;margin:30px">
+  <h1>Cyclone · 原始 GLSL / vgpu WGSL 像素对照</h1>
+  <p>在同一设备上分别运行 WebGL2 原始公式与 WebGPU 移植，读取 RGB 像素后比较。Alpha 与坐标原点在边界统一。</p>
+  <p><a href="/" style="color:#c5a6e1">← 返回作品</a></p>
+  <button id="run">运行验证</button><button id="benchmark">测量性能</button><p id="status" role="status">准备就绪</p>
+  <div id="images" style="display:flex;gap:20px;flex-wrap:wrap"></div>
+  <pre id="results" style="white-space:pre-wrap"></pre>
+  <script type="module" src="/src/verify.ts"></script>
+</body></html>
