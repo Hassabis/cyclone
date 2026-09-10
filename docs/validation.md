@@ -39,4 +39,14 @@ Auto-mode output is resampled; native mode is still available. No claim of nativ
 - No title, attribution panel, explanatory text, FPS meter or source-code panel in the artwork UI.
 - Original attribution, license, source correspondence and later-article requirements retained in the repository.
 
-Full-size native image inspection was performed. Mobile-sized viewport checks and production readback are documented after deployment; responsive desktop emulation is not real mobile-device acceptance.
+Full-size native image inspection was performed. A 390×844 same-origin iframe was used for responsive validation (the browser viewport override did not take effect). Document scroll width is 390; control strip bounds are x=33.5..356.5, y=787..828, inside the viewport. Hide / reveal controls verified. This is desktop responsive testing, not real mobile-device acceptance.
+
+## Production delivery
+
+- Production URL: https://cyclone-flame.vercel.app
+- Repository: https://github.com/Hassabis/cyclone
+- Implementation commit: `e6a75934666f93b34f5be1516d58a4e2466272fe` (later documentation commit adds these delivery links).
+- Vercel project `cyclone`, linked to `Hassabis/cyclone`, production branch `main`.
+- Public homepage and both hashed JS/CSS assets returned HTTP 200. Downloaded asset SHA-256 hashes match the local production build.
+- `/attribution.txt` returned 200 and retained XorDev attribution. `/verify.html` and `/.env.local` returned 404.
+- Live WebGPU canvas reached `data-state=ready`; animation and pause verified in the production browser; no browser console warnings/errors. Vercel error-log query returned no records (the site is static; browser errors are checked separately).

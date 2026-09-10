@@ -3,6 +3,7 @@
 A faithful WebGPU adaptation of **Xor / @XorDev**'s [Cyclone [369]](https://www.shadertoy.com/view/N3dGRM), built with [Vercel's vgpu](https://github.com/vercel-labs/vgpu). The algorithm and original visual design belong to XorDev.
 
 - Repository: https://github.com/Hassabis/cyclone
+- Live preview: https://cyclone-flame.vercel.app
 - Source / licensing: [THIRD_PARTY.md](THIRD_PARTY.md)
 - Formula correspondence and implementation details: [port notes](docs/port-notes.md)
 - Measured fidelity and performance: [validation](docs/validation.md)

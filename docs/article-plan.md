@@ -7,7 +7,7 @@
 文章必须包含：
 
 - 明确标注原算法作者 Xor（@XorDev），作品 Cyclone [369]，原作 https://www.shadertoy.com/view/N3dGRM 。区分原作与本项目的 WebGPU 移植，署名放在文章和仓库中，作品画面不显示这些信息。
-- GitHub 仓库地址 https://github.com/Hassabis/cyclone 、最终 Vercel 线上预览地址，以及文章对应的 Git 提交版本，方便读者运行和复现。
+- GitHub 仓库地址 https://github.com/Hassabis/cyclone 、线上预览地址 https://cyclone-flame.vercel.app ，以及文章对应的 Git 提交版本，方便读者运行和复现。
 - 真实运行效果的 GIF，不用静态图伪装动画；配原作 / 移植并排对照、关键公式示意图和阶段渲染图。
 - 原始 369 字符 GLSL 与可读版本逐段对应：像素射线、90 次步进、空间扭转、7 层正弦扰动、距离步长、发光积累和 tanh 色调映射。
 - 我们的实现细节与注意事项。主实现是 vgpu / WebGPU / WGSL，WebGL2 运行原始 GLSL 作为验证基准；不要混称为同一种 API。
