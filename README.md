@@ -65,13 +65,3 @@ src/verify.ts                     本地画面对照与性能测量
 src/style.css                     简单控制条样式
 docs/                            技术说明与测量记录
 ```
-
-## 部署
-
-Vercel 项目 `cyclone` 已连接本仓库，`main` 是生产分支。推送后自动构建并部署，Vite 的静态产物位于 `dist`。
-
-项目不需要后端服务、外部纹理或应用密钥。本地 `.vercel` 与 `.env*` 文件不会提交到 Git。
-
-## 署名与授权
-
-原始作品为 **Xor（@XorDev）的 Cyclone [369]**。原作及本项目的 WGSL 改编遵循 **CC BY-NC-SA 3.0（署名—非商业性使用—相同方式共享）**，具体依据见[来源与授权说明](THIRD_PARTY.md)。vgpu 依赖保留其 MIT 许可证。
